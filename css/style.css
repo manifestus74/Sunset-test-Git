@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.sky {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(40, 194, 255);
+    position: relative;
+    overflow: hidden;
+}
+.sun {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 50%;
+    background-color: yellow;
+    position: absolute;
+    animation-name: sunset;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sunset {
+    0%{background-color: yellow; top: -100%; left: 50%;}
+    50%{background-color: tomato; top: 100%; left: 50%;}
+    100%{background-color: yellow; top: -100%; left: 50%;}
+}
